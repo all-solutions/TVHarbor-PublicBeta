@@ -5,7 +5,7 @@ TVHarbor is a desktop client for **TVHeadend** with an integrated VLC-based play
 > [!IMPORTANT]
 > TVHarbor is currently in **public beta**. The application is already stable in daily testing, but features and behavior may still change before the first final release.
 
-At the moment, the public beta is available for **Windows x64 only**. Linux and macOS versions are planned after the Windows beta phase.
+The public beta is currently available for **Windows x64** and **Linux (Debian/Ubuntu, x64)**. The Linux build is distributed as a `.deb` package and has been tested on Ubuntu. A macOS version is planned for a later stage.
 
 ## Features
 
@@ -20,7 +20,6 @@ At the moment, the public beta is available for **Windows x64 only**. Linux and 
 - Switch channels directly in the main window
 - Fullscreen playback
 - Integrated VLC-based playback
-- Bundled VLC runtime libraries — no separate VLC installation required
 - Volume control with persistent startup volume
 - Mute / unmute control
 - Automatic EPG refresh while watching
@@ -96,11 +95,43 @@ At the moment, the public beta is available for **Windows x64 only**. Linux and 
 
 ## Requirements
 
+### Windows
+
 - Windows x64
 - A reachable TVHeadend server
 - TVHeadend user credentials with access to the required channels, EPG and recording functions
 
-A separate VLC installation is **not required**. The necessary VLC runtime libraries are bundled with TVHarbor.
+The necessary VLC runtime libraries are bundled with the Windows build, so a separate VLC installation is **not required**.
+
+### Linux
+
+- Debian/Ubuntu x64 (currently tested on Ubuntu)
+- A reachable TVHeadend server
+- TVHeadend user credentials with access to the required channels, EPG and recording functions
+- libVLC/VLC runtime packages installed on the system
+
+## Linux installation
+
+Download the current `.deb` package from the [latest TVHarbor release](https://github.com/all-solutions/TVHarbor-PublicBeta/releases/latest). You can copy the download URL of the `.deb` asset and download it directly with `wget`:
+
+```bash
+wget <URL-of-the-TVHarbor-.deb-package>
+```
+
+Install the required VLC/libVLC runtime packages:
+
+```bash
+sudo apt update
+sudo apt install libvlc5 libvlccore9 vlc-plugin-base
+```
+
+Then install TVHarbor using the downloaded package:
+
+```bash
+sudo apt install ./TVHarbor*.deb
+```
+
+The Linux package is currently tested on **Ubuntu**. Feedback from other Debian/Ubuntu-based distributions is very welcome during the public beta.
 
 ## Connecting TVHarbor to TVHeadend
 
@@ -113,7 +144,7 @@ Use **Test Connection** to verify that TVHarbor can reach and authenticate again
 ![TVHarbor TVHeadend Configuration](doc/Configuration.jpg)
 
 > [!TIP]
-> If the connection test fails, first verify that the TVHeadend web interface is reachable from the same Windows PC and that the configured TVHeadend user has the required access permissions.
+> If the connection test fails, first verify that the TVHeadend web interface is reachable from the same computer and that the configured TVHeadend user has the required access permissions.
 
 ## Public Beta
 
@@ -124,7 +155,7 @@ The application itself is still under active development. During the beta phase 
 If you find a problem, please open an **Issue** in this repository and include as much information as possible, for example:
 
 - TVHarbor version
-- Windows version
+- Operating system and version
 - TVHeadend version
 - A short description of what happened
 - Steps to reproduce the problem
@@ -136,7 +167,7 @@ Feature requests and general feedback are also very welcome.
 
 Among the features currently being considered for future versions are:
 
-- Linux support
+- ~~Linux support~~ ✅ **Available in the Public Beta** — Debian/Ubuntu (`.deb`), currently tested on Ubuntu
 - macOS support
 - Subtitle / closed-caption track selection
 - Audio track selection
@@ -150,7 +181,7 @@ No final decision has been made yet on whether the complete TVHarbor source code
 
 The main reason for keeping the development repository private for now is the increasing amount of source code — and in some cases complete projects — being copied, minimally modified and republished under a different name without meaningful attribution or contribution back to the original project. Because a considerable amount of development time has gone into TVHarbor, I want to evaluate the best way to make the project available long-term without unnecessarily encouraging that kind of reuse.
 
-For the time being, the public repository therefore provides the current Windows builds, documentation, screenshots, releases and issue tracking, while active development continues in a private repository. The licensing and source-code model may be revisited once TVHarbor has progressed beyond the beta phase.
+For the time being, the public repository therefore provides the current Windows and Linux builds, documentation, screenshots, releases and issue tracking, while active development continues in a private repository. The licensing and source-code model may be revisited once TVHarbor has progressed beyond the beta phase.
 
 ## Disclaimer
 
