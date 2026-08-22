@@ -76,23 +76,23 @@ At the moment, the public beta is available for **Windows x64 only**. Linux and 
 
 ### Main window
 
-![TVHarbor Main Window](https://raw.githubusercontent.com/all-solutions/TVHarbor/main/doc/Main-Windows.jpg)
+![TVHarbor Main Window](doc/Main-Windows.jpg)
 
 ### Programme guide
 
-![TVHarbor EPG](https://raw.githubusercontent.com/all-solutions/TVHarbor/main/doc/EPG.jpg)
+![TVHarbor EPG](doc/EPG.jpg)
 
 ### Recordings
 
-![TVHarbor Recordings](https://raw.githubusercontent.com/all-solutions/TVHarbor/main/doc/Recordings.jpg)
+![TVHarbor Recordings](doc/Recordings.jpg)
 
 ### Cinema Mode
 
-![TVHarbor Cinema Mode](https://raw.githubusercontent.com/all-solutions/TVHarbor/main/doc/Cinema-Mode.jpg)
+![TVHarbor Cinema Mode](doc/Cinema-Mode.jpg)
 
 ### Light Theme
 
-![TVHarbor Light Theme](https://raw.githubusercontent.com/all-solutions/TVHarbor/main/doc/Light-Thema.jpg)
+![TVHarbor Light Theme](doc/Light-Thema.jpg)
 
 ## Requirements
 
