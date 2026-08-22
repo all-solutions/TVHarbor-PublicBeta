@@ -102,6 +102,19 @@ At the moment, the public beta is available for **Windows x64 only**. Linux and 
 
 A separate VLC installation is **not required**. The necessary VLC runtime libraries are bundled with TVHarbor.
 
+## Connecting TVHarbor to TVHeadend
+
+After starting TVHarbor for the first time, open **Settings → TVHeadend Server Profiles** and create a profile for your TVHeadend server.
+
+Enter a name for the profile, the URL of your TVHeadend server and the username and password of a TVHeadend user. The server URL should include the protocol and port, for example `http://192.168.1.10:9981`.
+
+Use **Test Connection** to verify that TVHarbor can reach and authenticate against the server before saving the profile. Once saved and selected as the active profile, TVHarbor will load the available channels, EPG data and recordings from that TVHeadend server.
+
+![TVHarbor TVHeadend Configuration](doc/Configuration.jpg)
+
+> [!TIP]
+> If the connection test fails, first verify that the TVHeadend web interface is reachable from the same Windows PC and that the configured TVHeadend user has the required access permissions.
+
 ## Public Beta
 
 This repository is used for the **public beta distribution and feedback** of TVHarbor.
