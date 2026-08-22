@@ -112,10 +112,10 @@ The necessary VLC runtime libraries are bundled with the Windows build, so a sep
 
 ## Linux installation
 
-Download the current `.deb` package from the [latest TVHarbor release](https://github.com/all-solutions/TVHarbor-PublicBeta/releases/latest). You can copy the download URL of the `.deb` asset and download it directly with `wget`:
+Download the current `.deb` package from the release:
 
 ```bash
-wget <URL-of-the-TVHarbor-.deb-package>
+wget https://github.com/all-solutions/TVHarbor-PublicBeta/releases/download/0.1.3/tvharbor_0.1.3_amd64.deb
 ```
 
 Install the required VLC/libVLC runtime packages:
@@ -125,10 +125,10 @@ sudo apt update
 sudo apt install libvlc5 libvlccore9 vlc-plugin-base
 ```
 
-Then install TVHarbor using the downloaded package:
+Then install TVHarbor:
 
 ```bash
-sudo apt install ./TVHarbor*.deb
+sudo apt install ./tvharbor_0.1.3_amd64.deb
 ```
 
 The Linux package is currently tested on **Ubuntu**. Feedback from other Debian/Ubuntu-based distributions is very welcome during the public beta.
