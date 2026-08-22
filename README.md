@@ -146,7 +146,11 @@ Among the features currently being considered for future versions are:
 
 TVHarbor is currently distributed as a **public beta build**, while the main development repository remains private.
 
-A final decision on whether the complete TVHarbor source code will be published as open source has not yet been made.
+No final decision has been made yet on whether the complete TVHarbor source code will eventually be published as open source. This is not intended to prevent community feedback or participation; during the public beta, feedback, bug reports and feature suggestions are explicitly welcome through this repository.
+
+The main reason for keeping the development repository private for now is the increasing amount of source code — and in some cases complete projects — being copied, minimally modified and republished under a different name without meaningful attribution or contribution back to the original project. Because a considerable amount of development time has gone into TVHarbor, I want to evaluate the best way to make the project available long-term without unnecessarily encouraging that kind of reuse.
+
+For the time being, the public repository therefore provides the current Windows builds, documentation, screenshots, releases and issue tracking, while active development continues in a private repository. The licensing and source-code model may be revisited once TVHarbor has progressed beyond the beta phase.
 
 ## Disclaimer
 
