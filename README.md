@@ -1,4 +1,4 @@
-# INFO: I'll be on vacation for two weeks starting August 28, 2026. Unfortunately, development will be on hold during that time.
+## INFO: I'll be on vacation for two weeks starting August 28, 2026. Unfortunately, development will be on hold during that time.
 
 # TVHarbor Public Beta
 
