@@ -1,3 +1,5 @@
+# INFO: I'll be on vacation for two weeks starting August 28, 2026. Unfortunately, development will be on hold during that time.
+
 # TVHarbor Public Beta
 
 TVHarbor is a desktop client for **TVHeadend** with an integrated VLC-based player.
