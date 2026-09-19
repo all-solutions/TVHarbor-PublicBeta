@@ -154,6 +154,10 @@ If you would like to see TVHarbor in another language, feel free to request it. 
 
 ![TVHarbor Cinema Mode](doc/Cinema-Mode.jpg)
 
+### Media Server
+
+![TVHarbor Media Server](doc/Media-Server.png)
+
 ### Light Theme
 
 ![TVHarbor Light Theme](doc/Light-Thema.jpg)
