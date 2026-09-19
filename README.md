@@ -182,7 +182,7 @@ sudo apt install ./tvharbor_<version>_amd64.deb
 
 The package declares the required playback dependencies so that `apt` can resolve and install them automatically.
 
-TVHarbor has been manually tested on Ubuntu. Feedback from other Debian/Ubuntu-based distributions is very welcome.
+TVHarbor has been manually tested on Debian and Ubuntu. Feedback from other Debian/Ubuntu-based distributions is very welcome.
 
 ### macOS
 
